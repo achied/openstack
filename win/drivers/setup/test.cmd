@@ -1,0 +1,1 @@
+c:\drivers\setup\devcon.exe install c:\drivers\virtio\viostor.inf PCI\VEN_1AF4^&DEV_1001^&SUBSYS_00021AF4
