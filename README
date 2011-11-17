@@ -1,1 +1,6 @@
 Random OpenStack related files and work as I come up with stuff.
+
+\win
+Everything in this folder is to enable a windows guest to use virtio drivers and get userdata from ec2. It also does a static IP assignment due to some dnsmasq issues.
+In theory you can drop \drivers and \windows on to the root of a 2008 r2 sp1 image, run c:\windows\panther\unattend\runsysprep.cmd and upload the shutdown image in to glance and having a working windows guest
+whatever you put in userdata will be set as the Administrators password by default.
