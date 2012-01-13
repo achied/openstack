@@ -2,6 +2,7 @@ cd /d %~dp0
 
 net use * /d /y
 
+bcdedit -set loadoptions DDISABLE_INTEGRITY_CHECKS
 certutil -addstore "TrustedPublisher" c:\drivers\setup\rhdriver.cer
 ::c:\drivers\setup\devcon.exe install c:\drivers\virtio\viostor.inf PCI\VEN_1AF4&DEV_1001&SUBSYS_00021AF4
 c:\drivers\setup\devcon.exe dp_add c:\drivers\virtio\viostor.inf
